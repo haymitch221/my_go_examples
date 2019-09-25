@@ -20,6 +20,6 @@ func main() {
 		{"a": "3", "b": "11", "c": "12"},  // 1
 		// {"a": "11", "b": "16", "c": "24"}, // 5 , 这个是不成功的会被归到 1 中，需要优化，
 	}
-	stKeys1 := []string{"a", "b"}
-	fmt.Println(simi.Aggr(data1, stKeys1))
+	data1Result := simi.Aggr(data1, []string{"a", "b"})
+	fmt.Println(data1Result)
 }
